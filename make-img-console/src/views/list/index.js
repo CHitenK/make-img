@@ -25,7 +25,8 @@ const List = () => {
     imgLookSrc:  window.location.origin + '/api/makeimg?id='
   })
   const history = useHistory()
- // 获取数据
+  const whiteArr = ['MKI1598282872607', 'MKI1598350477880', 'MKI1598930966762'] // 白名单
+  // 获取数据
   const getListApi = (page=1, size = 5) => {
     // const hide = message.loading('加载中...', 0)
     const data = {
@@ -243,11 +244,12 @@ const List = () => {
         width: 160,
         render: (ext,record,index) => ( 
           <div className="fs-12 clr-gr tool">
-            <span onClick={() => history.push('/content/edit/' + record.id )}>编辑</span>
-            <span  onClick={() => update(record)}>{record.isUse ? '停用' : '启用'}</span>
-            {/* <a href={state.imgLookSrc + record.id} target="_blank"></a> */}
-              {record.isUse && <span onClick={() => lookImg(record) }>查看</span>}
-            <span onClick={() => dele(record.id)}>删除</span>
+            {
+              !whiteArr.includes(record.id) && (<div><span onClick={() => history.push('/content/edit/' + record.id )}>编辑</span>
+              <span  onClick={() => update(record)}>{record.isUse ? '停用' : '启用'}</span>
+              <span onClick={() => dele(record.id)}>删除</span></div>)
+            }
+            {record.isUse && <span onClick={() => lookImg(record) }>查看</span>}
         </div>
         )
       }

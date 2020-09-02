@@ -5,17 +5,17 @@ const Badge = (prams) => {
   const { name } = prams
    return(
      <div className="badge-box">
-        <div class="space-label">
-          <div class="top">
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
+        <div className="space-label">
+          <div className="top">
+              <div className="ring"></div>
+              <div className="ring"></div>
+              <div className="ring"></div>
           </div>
-   <div class="text">{name || '新建图片'}</div>
-          <div class="bottom">
-              <div class="ring"></div>
-              <div class="ring"></div>
-              <div class="ring"></div>
+   <div className="text">{name || '新建图片'}</div>
+          <div className="bottom">
+              <div className="ring"></div>
+              <div className="ring"></div>
+              <div className="ring"></div>
           </div>
       </div>
      </div>

@@ -178,7 +178,7 @@ const EditImg =  (opt) => {
                     <Button className="mr-l-15">重置</Button>
                  </div>
                  <div>
-                   <Switch checkedChildren="开启网格" unCheckedChildren="关闭网格"  onChange={() => switchNet()} />
+                   <Switch checkedChildren="关闭网格" unCheckedChildren="开启网格"  onChange={() => switchNet()} />
                  </div>
               </div>
            </div>

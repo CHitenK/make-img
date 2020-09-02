@@ -12,12 +12,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin') // 压缩
     },
     output: {
         publicPath: '/',
-        // filename: '[name].[chunkhash:8].js',//'[name].bundle.js',
-        // path: path.resolve(__dirname, 'build')
-        // filename: '[name].[chunkhash:8].js',
-        filename: '[name].js', //出口名称
-        // filename: 'bundle.js',
-        // filename: "[name]-[hash].js",
+        filename: 'bundle.js',
         path: path.resolve(__dirname, 'build')
     },
     resolve:{
