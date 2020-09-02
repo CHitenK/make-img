@@ -11,7 +11,7 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin') // 压缩
         vendor: ['react','react-dom','react-router-dom', 'antd', 'axios', 'echarts']
     },
     output: {
-        publicPath: '/',
+        publicPath: './',
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'build')
     },

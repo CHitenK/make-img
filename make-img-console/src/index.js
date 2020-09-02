@@ -7,7 +7,7 @@ import App from './App';
 import { BrowserRouter as Router } from 'react-router-dom'
 
 ReactDOM.render(
-  <Router>
+  <Router basename='/make-img'>
     <App />
   </Router>, 
   document.getElementById('root')
@@ -17,3 +17,6 @@ ReactDOM.render(
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://bit.ly/CRA-PWA
 // serviceWorker.unregister();
+//  *8208 rewrite or internal redirection cycle while internally redirecting to "/make-img/index.html", 
+// client: 219.137.73.228, server: chimke.cn, request: "GET /make-img/ HTTP/1.1", host: "chimke.cn"
+// 
