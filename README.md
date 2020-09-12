@@ -6,17 +6,16 @@
 >> 详细说明参考博客：
 
 ## 目录说明
-│  .gitignore
-│  README.md
-│  
-├─make-img-console            系统代码
-│  │  .babelrc
-│  │  package-lock.json
-│  │  package.json
-│  │  webpack.config.js
-│  │  
-│  ├─build
-│  │      
+*│  .gitignore
+*│  README.md
+*│  
+*│  │  .babelrc
+*│  │  package-lock.json
+*│  │  package.json
+*│  │  webpack.config.js
+*│  │  
+*│  ├─build
+*│  │      
 │  └─src
 │      │  App.css
 │      │  App.js
