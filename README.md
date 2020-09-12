@@ -2,14 +2,22 @@
 
 >>基于Node, KOA2, node-canvas, ReactHooks, Mongo搭建自定义生成分享图系统
 
->> 自定义生成分享图效果图：
->> 简单生成的图片 [http://chimke.cn:8082/api/makeimg?id=MKI1598282872607](http://chimke.cn:8082/api/makeimg?id=MKI1598282872607)
->> 传参生成的图片 [http://chimke.cn:8082/api/makeimg?id=MKI1598350477880&n=7098]( http://chimke.cn:8082/api/makeimg?id=MKI1598350477880&n=7098)
->> 配置化传参生成的图片 [ http://chimke.cn:8082/api/makeimg?id=MKI1598930966762&pro_img=https://pic.e111.com.cn/group1/M00/04/11/Cg1F-V8Wtj2AOUcKAAdMbvce1R8535.png_750.png&daren=https://api.crossplus.topgoods.mobi/weixin/imageCtrl/getminiqrQr?scene=208190,2525,&page=pages/index/productDetail/productDetail&width=300&pfChannelId=36&pro_name=【小罐尝鲜】Mead Johnson美赞臣港版NeuroPro智睿HMO奶粉3段(1-3岁)400g/罐&pro_price=12.93]( http://chimke.cn:8082/api/makeimg?id=MKI1598930966762&pro_img=https://pic.e111.com.cn/group1/M00/04/11/Cg1F-V8Wtj2AOUcKAAdMbvce1R8535.png_750.png&daren=https://api.crossplus.topgoods.mobi/weixin/imageCtrl/getminiqrQr?scene=208190,2525,&page=pages/index/productDetail/productDetail&width=300&pfChannelId=36&pro_name=【小罐尝鲜】Mead Johnson美赞臣港版NeuroPro智睿HMO奶粉3段(1-3岁)400g/罐&pro_price=12.93)
 
 >> 网址： [http://chimke.cn:8082/](http://chimke.cn:8082/)
 
 >> 详细说明参考博客：
+
+## 自定义生成分享图效果图：
+
+### 简单生成的图片 
+>> [http://chimke.cn:8082/api/makeimg?id=MKI1598282872607](http://chimke.cn:8082/api/makeimg?id=MKI1598282872607)
+
+### 传参生成的图片 
+>> [http://chimke.cn:8082/api/makeimg?id=MKI1598350477880&n=7098]( http://chimke.cn:8082/api/makeimg?id=MKI1598350477880&n=7098)
+
+### 配置化传参生成的图片 
+>>[ http://chimke.cn:8082/api/makeimg?id=MKI1598930966762&pro_img=https://pic.e111.com.cn/group1/M00/04/11/Cg1F-V8Wtj2AOUcKAAdMbvce1R8535.png_750.png&daren=https://api.crossplus.topgoods.mobi/weixin/imageCtrl/getminiqrQr?scene=208190,2525,&page=pages/index/productDetail/productDetail&width=300&pfChannelId=36&pro_name=【小罐尝鲜】Mead Johnson美赞臣港版NeuroPro智睿HMO奶粉3段(1-3岁)400g/罐&pro_price=12.93]( http://chimke.cn:8082/api/makeimg?id=MKI1598930966762&pro_img=https://pic.e111.com.cn/group1/M00/04/11/Cg1F-V8Wtj2AOUcKAAdMbvce1R8535.png_750.png&daren=https://api.crossplus.topgoods.mobi/weixin/imageCtrl/getminiqrQr?scene=208190,2525,&page=pages/index/productDetail/productDetail&width=300&pfChannelId=36&pro_name=【小罐尝鲜】Mead Johnson美赞臣港版NeuroPro智睿HMO奶粉3段(1-3岁)400g/罐&pro_price=12.93)
+
 
 ## 目录说明
 ```
