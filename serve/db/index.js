@@ -1,5 +1,6 @@
 // db/db.js
 const mongoose = require('mongoose')
+// Mongo数据库连接地址
 const DB_URL = 'mongodb://cmk:chiminke@122.51.162.240:27017/myproject'
 
 mongoose.connect(DB_URL)

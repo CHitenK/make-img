@@ -55,9 +55,8 @@ router.get("/api/makeimg", async (content, next) => {
     ctx.font = item.fontSize + "px" + '"Microsoft YaHei"'; // "Microsoft YaHei" 
     ctx.fillStyle = item.fsColor;
     ctx.moveTo(item.px, item.py)
-    const y = item.py + parseInt(100 / item.py) // (item.py + 8)
+    const y = item.py + parseInt(100 / item.py)
     drawtext(ctx, des, item.px, item.py, bgData.width - item.px + 3, item.fontSize)
-    // ctx.fillText(des, item.px, y);
     ctx.save();
   }
   content.set("content-type", "image/jpg");
@@ -91,7 +90,7 @@ router.post("/api/makeimg/list", async (ctx, next) => {
     ctx.response.body = { ...success, data: { total, content }}
   } catch {
     ctx.response.body = error
-    console.log(Moment().format('YYYY-MM-DD HH:mm:ss'), '请求列表数据出粗', query)
+    console.log(Moment().format('YYYY-MM-DD HH:mm:ss'), '请求列表数据出错', query)
   }
  
 });

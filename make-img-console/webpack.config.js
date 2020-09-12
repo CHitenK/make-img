@@ -8,11 +8,11 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin') // 压缩
     devtool: false, //'inline-source-map',
     entry: {
         index: './src/index.js',
-        vendor: ['react','react-dom','react-router-dom', 'antd', 'axios', 'echarts']
+        vendor: ['react','react-dom','react-router-dom', 'antd', 'axios']
     },
     output: {
-        publicPath: './',
-        filename: 'bundle.js',
+        publicPath: '/',
+        filename: '[name].js', //出口名称
         path: path.resolve(__dirname, 'build')
     },
     resolve:{
@@ -41,15 +41,14 @@ const UglifyJSPlugin = require('uglifyjs-webpack-plugin') // 压缩
     },
     devServer: {
         contentBase: './build',
-        port: 8008,
+        port: 8081,
         inline: true,
         hot: true,
         open: true,
         historyApiFallback: true,
         proxy: {
             '/api': {
-                // target: 'http://localhost:2020',
-                target: 'http://chimke.cn:8088',
+                target: 'http://localhost:2020',
                 changeOrigin: true,
               }
         }
