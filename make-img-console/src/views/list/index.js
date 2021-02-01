@@ -22,7 +22,7 @@ const List = () => {
     showLookLay: false,
     optArray: [],
     targetiId: '',
-    imgLookSrc:  window.location.origin + '/api/makeimg?id='
+    imgLookSrc:  window.location.protocol + '//' + window.location.hostname + ':2020/api/makeimg?id='
   })
   const history = useHistory()
   const whiteArr = ['MKI1598282872607', 'MKI1598350477880', 'MKI1598930966762'] // 白名单

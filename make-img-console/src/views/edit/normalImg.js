@@ -55,6 +55,7 @@ const Normal = () => {
     }
     // 图片上传完成
     const upload = (info, index) => {
+        
         const fileNameArr = state.fileNameArr
         let filename = ''
         if (info.file.status === 'done') {
